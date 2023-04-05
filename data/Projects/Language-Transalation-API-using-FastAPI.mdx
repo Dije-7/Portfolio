@@ -1,0 +1,51 @@
+---
+title: 'Language Transalation API using FastAPI'
+date: '2022-05-18'
+tags: ['Python', 'FastAPI', 'Docker']
+draft: false
+author: 'Dhwaj Jain'
+summary: 'An API that uses a deep learning model to translate languages.'
+---
+
+# About the Project
+
+The objective of this project was to build a translation API that utilizes deep learning to deliver fast and accurate translations. To accomplish this, we employed FastAPI to create a web server that exposes two routes: /translate and /results. Our clients can submit their translation requests through the /translate route, and subsequently receive the translation results through the /results route.
+
+We leveraged a SQLite database to store the translations, which enables us to keep track of previous translation requests and results. Our backend uses async and a pre-trained deep learning language model to efficiently execute the translation jobs. This approach ensures that our translation requests are processed quickly and accurately.
+
+Furthermore, our API can be easily extended to include additional languages or options, thanks to its flexible design. We are confident that this translation API will provide significant value to our clients, as it delivers high-quality translations in a timely and efficient manner.
+
+To facilitate the deployment of our API, we also created a Docker container. This container encapsulates all of the dependencies needed to run the API, making it simple and straightforward to deploy on any platform that supports Docker.
+
+**Project Steps**
+* Build API routes
+* Add in models to store data to database
+* Create tasks to run the translation
+
+## File overview:
+
+* `requirements.txt` - packages you'll need to install
+* `main.py` - defines the web server routes
+* `models.py` - defines database models
+* `tasks.py` - runs our backend tasks, including the translation
+
+## Usage
+
+* To run the server locally, run `uvicorn main:app --reload`.
+
+* To build the docker container * `docker build -t dlapi .`
+
+* If you're not running on 64-bit linux, instead run `docker buildx build --platform linux/amd64 -t dlapi .
+
+![dl_api](/static/Projects/p2.png)
+
+## Conclusion
+
+In conclusion, this project successfully developed a translation API using deep learning, which provides fast and accurate translations to our clients. The web server built using FastAPI and SQLite database, along with the pre-trained deep learning language model, ensures that translation requests are processed efficiently, while maintaining accuracy.
+
+This API can be useful for individuals and businesses who need to communicate with people who speak different languages. It can also be used to translate documents, emails, and web pages. Furthermore, since the API is designed to be extensible, it can be easily customized to support additional languages and options, thus making it more versatile.
+
+In terms of future scope, there are several areas where this project can be improved. For instance, it can use different deep learning model to support more languages and the accuracy of the translations can be improved further by training the language model on more data, or by fine-tuning it on domain-specific data. Additionally, the API can be expanded to support other features such as text-to-speech and speech-to-text translation, which would make it more comprehensive.
+
+Overall, this project is a significant step towards creating an efficient and accurate translation API that can help people communicate more effectively across language barriers. With further development and enhancements, this API can become a valuable tool for individuals and businesses alike, and open up new avenues for global communication and collaboration.
+

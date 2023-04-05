@@ -1,0 +1,57 @@
+---
+title: 'An Image Classifier using Fast.ai'
+date: '2022-09-18'
+tags: ['Python','Deep-Learning','Fastai','duckduckgo-search']
+draft: false
+author: 'Dhwaj Jain'
+summary: 'Classifies fruit images based on whether they are rotten or fresh'
+---
+
+
+# About the project
+
+This image classifier leverages the powerful capabilities of the fastai deep learning library, which is built on top of the popular Pytorch framework. With its high-level and low-level components, fastai enables the rapid development of cutting-edge models for a wide range of deep learning applications, including image classification.
+
+The purpose of this particular model is to classify images of fruits into a binary category: either "rotten" or "not rotten". The intended use case for this model is within refrigerators, where it can quickly and accurately detect if produce has gone bad, allowing for timely removal and replacement to ensure optimal freshness and safety.
+
+Built using a state-of-the-art neural network architecture and trained on a large and diverse dataset of fruit images, this model is capable of accurately identifying signs of spoilage in a variety of fruit types and conditions. Its robust performance and real-world utility make it a valuable tool for both individuals and businesses looking to optimize their produce storage and minimize waste.
+
+With its streamlined implementation and user-friendly interface, this image classifier represents a powerful solution for image-based fruit classification and offers significant potential for improving food safety and reducing food waste.
+
+# Model's Training process
+
+## Step 1: Downloading images of rotten and fresh fruit
+
+![download-images](/static/Projects/Project1.png)
+
+## Step 2: Training our model Using fastai
+
+![model-train](/static/Projects/Project_2.png) ![model-train2](/static/Projects/Project3.png)
+
+## Step 3: Using the model
+
+![using-model](/static/Projects/project4.png)
+
+
+
+## Step 4: Classifying images of rotten and fresh oranges
+
+This is to check if our model can predict if a given image is of a rotten orange or a fresh orange.
+We haven't explicitly downloaded images of fresh/rotten oranges for our training set, so it would be a good generalization on "unseen data".
+
+![classifying](/static/Projects/project5.png)
+
+The model seems to generalize fine.
+Though, a more accurate measure of generalizability would involve creating a separate test set and calculating performance metrics.
+
+## Conclusion
+
+In conclusion, the deep learning model developed for this project has demonstrated a high level of accuracy in predicting the binary category of fruits as rotten or not.
+
+However, while the model's accuracy is satisfactory, there is still room for improvement. One potential avenue for improvement is to explore different neural network architectures and fine-tune the hyperparameters further to enhance the model's performance. Additionally, the model's performance can be further evaluated by testing it on a larger and more diverse dataset.
+
+In terms of future scope, this project's deep learning model has the potential to be extended to other image classification tasks beyond fruits.
+Furthermore, the model's implementation can be optimized for real-time processing, such as deploying it on edge devices or integrating it into existing refrigeration systems to detect food spoilage in real-time. 
+Overall, the success of this project showcases the potential of deep learning models in solving real-world problems and the ongoing opportunities for further improvement and innovation.
+
+Github repository for the above [Project](https://github.com/Dije-7/Image-Classification-Fastai)
