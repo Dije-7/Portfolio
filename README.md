@@ -14,13 +14,13 @@
 1. Clone this repo
 
 ```bash
-git clone git@github.com:dlarroder/dalelarroder.git
+git clone https://github.com/Dije-7/Portfolio.git
 ```
 
 2. Change directory
 
 ```sh
-cd dalelarroder
+cd webport
 ```
 
 3. Install yarn packages
